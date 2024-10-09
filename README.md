@@ -21,11 +21,11 @@ pip install -r requirements.txt
 docker run --rm \
   -e DISPLAY=$DISPLAY \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
-  -v $(pwd)/output:/app/output \
+  -v $(pwd)/shared:/app/shared \
   ahardiag/curvedigitalisation:latest
 ```
 > [!TIP]
-> To recover the outputs out of the container, one need to save them in the mounted location `/app/output`
+> All inputs and output file need be in the `./shared` location to be accessible inside the containers for reading and writing
 
 ## Usage
 

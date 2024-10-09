@@ -2,3 +2,6 @@
 .git
 __pycache__
 *.pyc
+examples-plots/
+line-graphics-dataset/
+.ipynb_checkpoints/
